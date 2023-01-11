@@ -15,19 +15,30 @@ This app is develop for Redux and Type Script learning. Also create a template f
     - `Readonly<'Object'>` is for object, if we want to make the list is readonly, please use "`readonly Todos[]`"
   - **Literal types**: You can use exact values when specifying a type. This is called literal types.
     - The value is fixed forever if th object is readonly.
-  
-  ```typescript
-  // Returns an array where "done" is all true
-  function completeAll(
-    todos: readonly Todo[]
-  ): CompletedTodo[] {
-    // ...
-  }
-  ```
-
+        ```typescript
+        // Returns an array where "done" is all true
+        function completeAll(
+            todos: readonly Todo[]
+        ): CompletedTodo[] {
+            // ...
+        }
+        ```
   - The Above example is using a `CompletedTodo` (which is a literal type) to output a fix `done` value object list.
-  - **Intersection types**: deduplicate the properties in two types
+  - **Intersection Types**: deduplicate the properties in two types
     - Like the && boolean operators, this one is tyep operators to combine two types.
+  - **Union Types**: use `A|B` to create union type. --> The type can work like a `Enum type` in Android.
+      ``` javascript
+      type Place = 'home' | 'work' | { custom: string }
+      ```
+    - Use `?` after the variable like code below to make the varible optional. (The variable like the `?` in the Kotlin, but Kotlin is for null value checking)
+      ``` javascript
+      place?: Place
+      ```
+    - Union type is good for condition handling. (在判斷的時候，所有的類型都應該覆蓋到，不然會報錯)
+
+## 2. TypeScript Generics for People Who Gave Up on Understanding Generics
+
+
 
 # *It may useful if you want to add sth into this README*
   - Basic formatting syntax: https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
