@@ -5,6 +5,7 @@ This app is develop for Redux and Type Script learning. Also create a template f
   1. A tutorial of todo using typescript(good to start): https://ts.chibicode.com/todo/
   2. TypeScript for Beginner Programmers(Not check yet): https://github.com/chibicode/TypeScript-for-Beginner-Programmers
   3. Redux official guide (Boring): https://redux.js.org/tutorials/fundamentals/part-1-overview
+  4. TypeScript online exercise (Beginner): https://typescript-exercises.github.io/
 
 # Note from Learning
 
